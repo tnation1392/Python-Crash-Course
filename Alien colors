@@ -1,0 +1,9 @@
+alien_color = 'green'
+score = 0
+
+if alien_color == 'red':
+	score == 5
+	print(f'You shot down a green alien! You get 5 points!')
+else: 
+	score == 10
+	print(f'You shot down a non-green alien! You get 10 points!')

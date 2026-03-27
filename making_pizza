@@ -1,0 +1,7 @@
+#Importing pizza function
+
+pizza_fun.py
+
+pizza_fun.make_pizza(16, 'pepperoni')
+
+pizza_fun.make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')

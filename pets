@@ -1,0 +1,6 @@
+def describe_pet (animal_type, name):
+	#Displays information about a pet
+	print(f"\nI have a {animal_type}")
+	print(f"Their name is {name}.")
+
+describe_pet("cat", "Molly")

@@ -1,0 +1,19 @@
+def print_models(unprinted, completed):
+	#Moves each design to completed after printing
+	while unprinted:
+		current_design = unprinted.pop()
+		print(f"Printing model: {current_design}")
+		completed.append(current_design)
+
+def show_completed(completed):
+	#Shows all printed models
+	print("\nThe following models have been printed:")
+	for model in completed:
+		print(model.title())
+
+#The lists used for the function
+unprinted = ['phone case', 'pendant', 'dodecahedron']
+completed = []
+
+print_models(unprinted, completed)
+show_completed(completed)

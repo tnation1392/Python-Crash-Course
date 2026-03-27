@@ -1,0 +1,6 @@
+def build_person (first, last):
+	person = {'first': first, 'last': last}
+	return(person)
+
+musician = build_person('jimi', 'hendrix')
+print(musician)

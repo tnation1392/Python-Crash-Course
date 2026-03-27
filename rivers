@@ -1,0 +1,13 @@
+rivers = {
+	'Nile' : 'Egypt',
+	'Mississippi' : 'US',
+	'Amazon' : 'Brazil',
+	'Yellow' : 'China'
+}
+
+print(f"The following rivers around the world are very large: \n")
+for river, country in rivers.items():
+	if country in ['Egypt', 'Brazil', 'China']:
+		print (f'The {river} flows through {country}.')
+	elif country == 'US':
+		print (f'The {river} flows through the {country}.')

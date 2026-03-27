@@ -1,0 +1,10 @@
+guests = ['Charles Darwin', 'Marcus Aurelius', 'Abraham Lincoln', 'Tom Brady', 'Larry Bird']
+
+print(f'Im inviting {guests[0]}, {guests[1]}, {guests[2]}, {guests[3]}, and {guests[4]} to my party.')
+
+cantmakeit = guests.pop(2)
+
+print(f'I just found out that {cantmakeit} isnt coming')
+
+print(f'So now Im inviting {guests[0]}, {guests[1]}, {guests[2]}, and {guests[3]} to my party.')
+

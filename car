@@ -1,0 +1,32 @@
+#Creating the car class
+class Car:
+	def __init__ (self, make, model, year):
+		self.make = make
+		self.model = model
+		self.year = year
+		self.odometer = 0
+
+	def get_descriptive_name(self):
+		#Returns a formatted name for the car
+		long_name = f"{self.year} {self.make} {self.model}"
+		return long_name.title()
+
+	def read_odometer(self):
+		#Prints a statement showing the mileage
+		print(f"This car has {self.odometer} miles on it.")
+
+	def update_odometer(self, mileage):
+		if mileage >= self.odometer:
+			self.odometer = mileage
+		else:
+			print("You can't roll back an odometer!")
+
+
+new_car = Car('Subaru', 'outback', 2019)
+print(new_car.get_descriptive_name())
+
+#Updating the odometer manually
+new_car.odometer = 230
+#Updating it via funtion
+new_car.update_odometer(250)
+print(f"This car now has {new_car.odometer} miles on it.")
